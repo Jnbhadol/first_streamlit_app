@@ -47,3 +47,5 @@ streamlit.dataframe(my_data_rows)
 #New Section to add another fruit
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
 streamlit.write('Thanks for adding ', add_my_fruit)
+
+my_cur.execute("INSERT INTO FRUIT_LOAD_LIST VALUES ('from streamlit'))"
